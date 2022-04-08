@@ -1,18 +1,21 @@
 # 3D Solar System
-* Solar System using Three.JS
+
+- Solar System using Three.JS
 
 ## 🚀 Features
-*  3D Objects having different geometries and materials
-*  Animated rotation of each 3D Object
-*  Controls on objects and interactions with them 
+
+- 3D Objects having different geometries and materials
+- Animated rotation of each 3D Object
+- Controls on objects and interactions with them
 
 ## 🧰 Technologies Used
 
-* ThreeJS
-* WebGL
+- ThreeJS
+- WebGL
 
 ## 👀 Preview
-### [Live Link](https://shwetkhatri2001.github.io/3D-Solar-System/)
+
+### [Live Link](https://3js-solar-system.netlify.app/)
 
 ![Preview](/images/3dsolarsystem.png)
 
@@ -25,7 +28,7 @@ git clone https://github.com/ShwetKhatri2001/3D-Solar-System.git
 ```
 
 ```bash
-npm install 
+npm install
 ```
 
 To run your app use this command.
@@ -34,11 +37,9 @@ To run your app use this command.
 npm run dev
 ```
 
-## 🎇 Contributing 
+## 🎇 Contributing
 
 If you find bugs with this project, pull requests are always welcome. You can [create an issue here](https://github.com/ShwetKhatri2001/3D-Solar-System/issues/new).
 Your :star: is also greatly appreciated.
 
 [Checkout my GitHub profile and view some more awesome projects](https://github.com/ShwetKhatri2001)
-
-
