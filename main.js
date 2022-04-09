@@ -44,11 +44,11 @@ scene.add(ambientLight);
 //control
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const spaceTexture = new THREE.TextureLoader().load("images/space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("space.jpg");
 scene.background = spaceTexture;
 
 const relativePostition = 20;
-const normalTexture = new THREE.TextureLoader().load("images/normal.jpg");
+const normalTexture = new THREE.TextureLoader().load("normal.jpg");
 
 function addPlanet(size, texture, position, normal = normalTexture) {
 	const planetTexture = new THREE.TextureLoader().load(texture);
@@ -75,7 +75,7 @@ function addPlanet(size, texture, position, normal = normalTexture) {
 	return { planet, orbit };
 }
 
-const sunTexture = new THREE.TextureLoader().load("images/sun.jpg");
+const sunTexture = new THREE.TextureLoader().load("sun.jpg");
 const geometry = new THREE.SphereGeometry(15, 32, 32);
 const material = new THREE.MeshBasicMaterial({
 	map: sunTexture,
@@ -111,29 +111,29 @@ sunOrbit.add(sun);
 
 scene.add(sunOrbit);
 
-const mercury = addPlanet(3, "images/mercury.jpg", relativePostition * 1.5);
-const venus = addPlanet(3, "images/venus.jpg", relativePostition * 2);
+const mercury = addPlanet(3, "mercury.jpg", relativePostition * 1.5);
+const venus = addPlanet(3, "venus.jpg", relativePostition * 2);
 
-const earthTexture = new THREE.TextureLoader().load("images/earth-normal.jpg");
+const earthTexture = new THREE.TextureLoader().load("earth-normal.jpg");
 const earth = addPlanet(
 	3,
-	"images/earth.jpg",
+	"earth.jpg",
 	relativePostition * 3,
 	earthTexture
 );
 earth.orbit.add(earthGlow);
-const moon = addPlanet(1, "images/moon.jpg", 8);
+const moon = addPlanet(1, "moon.jpg", 8);
 earth.planet.add(moon.orbit);
 
-const mars = addPlanet(3, "images/mars.jpg", relativePostition * 4);
-const jupyter = addPlanet(3, "images/jupyter.jpg", relativePostition * 5);
-const saturn = addPlanet(3, "images/saturn.jpg", relativePostition * 6);
-const uranus = addPlanet(3, "images/uranus.jpg", relativePostition * 7);
-const neptune = addPlanet(3, "images/neptune.jpg", relativePostition * 8);
+const mars = addPlanet(3, "mars.jpg", relativePostition * 4);
+const jupyter = addPlanet(3, "jupyter.jpg", relativePostition * 5);
+const saturn = addPlanet(3, "saturn.jpg", relativePostition * 6);
+const uranus = addPlanet(3, "uranus.jpg", relativePostition * 7);
+const neptune = addPlanet(3, "neptune.jpg", relativePostition * 8);
 
 // saturn ring
 const saturnRingTexture = new THREE.TextureLoader().load(
-	"images/saturn-ring.jpg"
+	"saturn-ring.jpg"
 );
 
 const saturnRing = new THREE.Mesh(
