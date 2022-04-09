@@ -17,7 +17,7 @@
 
 ### [Live Link](https://3js-solar-system.netlify.app/)
 
-![Preview](/images/3dsolarsystem.png)
+![Preview](/public/3dsolarsystem.png)
 
 ## 🧰 Installation
 
@@ -31,7 +31,7 @@ git clone https://github.com/ShwetKhatri2001/3D-Solar-System.git
 npm install
 ```
 
-To run your app use this command.
+To run your app, use this command.
 
 ```bash
 npm run dev
